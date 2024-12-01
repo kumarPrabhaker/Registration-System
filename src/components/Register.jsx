@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // For page redirection
+import { useNavigate } from 'react-router-dom'; 
 import './Register.css'
 
 const Register = () => {
@@ -15,7 +15,6 @@ const Register = () => {
 
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-    // Modified password regex: only requires at least one number and 6 characters
     const passwordRegex = /^(?=.*\d)[A-Za-z\d]{6,}$/;
 
     const handleSubmit = async (e) => {
